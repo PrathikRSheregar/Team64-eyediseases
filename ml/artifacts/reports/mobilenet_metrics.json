@@ -1,0 +1,88 @@
+{
+  "accuracy": 0.7993680884676145,
+  "balanced_accuracy": 0.7966601327456496,
+  "precision_macro": 0.8153915580362066,
+  "recall_macro": 0.7966601327456496,
+  "specificity_macro": 0.9327612184427806,
+  "f1_macro": 0.7979853548945405,
+  "f1_weighted": 0.7985601982691084,
+  "roc_auc_macro": 0.9572052965052409,
+  "confusion_matrix": [
+    [
+      138,
+      3,
+      10,
+      5
+    ],
+    [
+      0,
+      143,
+      0,
+      22
+    ],
+    [
+      7,
+      15,
+      92,
+      37
+    ],
+    [
+      1,
+      22,
+      5,
+      133
+    ]
+  ],
+  "classification_report": {
+    "Cataract": {
+      "precision": 0.9452054794520548,
+      "recall": 0.8846153846153846,
+      "f1-score": 0.9139072847682119,
+      "support": 156.0
+    },
+    "Diabetic Retinopathy": {
+      "precision": 0.7814207650273224,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.8218390804597702,
+      "support": 165.0
+    },
+    "Glaucoma": {
+      "precision": 0.8598130841121495,
+      "recall": 0.609271523178808,
+      "f1-score": 0.7131782945736435,
+      "support": 151.0
+    },
+    "Normal": {
+      "precision": 0.6751269035532995,
+      "recall": 0.8260869565217391,
+      "f1-score": 0.7430167597765364,
+      "support": 161.0
+    },
+    "accuracy": 0.7993680884676145,
+    "macro avg": {
+      "precision": 0.8153915580362066,
+      "recall": 0.7966601327456496,
+      "f1-score": 0.7979853548945405,
+      "support": 633.0
+    },
+    "weighted avg": {
+      "precision": 0.8134497443871163,
+      "recall": 0.7993680884676145,
+      "f1-score": 0.7985601982691084,
+      "support": 633.0
+    }
+  },
+  "per_class_specificity": {
+    "Cataract": 0.9832285115303984,
+    "Diabetic Retinopathy": 0.9145299145299145,
+    "Glaucoma": 0.9688796680497925,
+    "Normal": 0.864406779661017
+  },
+  "model_name": "MobileNet",
+  "model_type": "deep_learning",
+  "training_time_seconds": 2866.462130885,
+  "inference_time_ms_per_image": 44.240041996883406,
+  "n_parameters": 2422468,
+  "model_size_kb": 23279.06,
+  "epochs_trained": 20
+}

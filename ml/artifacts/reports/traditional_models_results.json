@@ -1,0 +1,447 @@
+{
+  "Decision Tree": {
+    "accuracy": 0.6666666666666666,
+    "balanced_accuracy": 0.6641556591023909,
+    "precision_macro": 0.6725597921797111,
+    "recall_macro": 0.6641556591023909,
+    "specificity_macro": 0.8892301929566794,
+    "f1_macro": 0.6674891260443958,
+    "f1_weighted": 0.6703846909837914,
+    "roc_auc_macro": 0.824394375195258,
+    "confusion_matrix": [
+      [
+        108,
+        2,
+        31,
+        15
+      ],
+      [
+        4,
+        131,
+        11,
+        19
+      ],
+      [
+        25,
+        5,
+        82,
+        39
+      ],
+      [
+        11,
+        13,
+        36,
+        101
+      ]
+    ],
+    "classification_report": {
+      "Cataract": {
+        "precision": 0.7297297297297297,
+        "recall": 0.6923076923076923,
+        "f1-score": 0.7105263157894737,
+        "support": 156.0
+      },
+      "Diabetic Retinopathy": {
+        "precision": 0.8675496688741722,
+        "recall": 0.793939393939394,
+        "f1-score": 0.8291139240506329,
+        "support": 165.0
+      },
+      "Glaucoma": {
+        "precision": 0.5125,
+        "recall": 0.543046357615894,
+        "f1-score": 0.5273311897106109,
+        "support": 151.0
+      },
+      "Normal": {
+        "precision": 0.5804597701149425,
+        "recall": 0.6273291925465838,
+        "f1-score": 0.6029850746268657,
+        "support": 161.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.6725597921797111,
+        "recall": 0.6641556591023909,
+        "f1-score": 0.6674891260443958,
+        "support": 633.0
+      },
+      "weighted avg": {
+        "precision": 0.675868967125722,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6703846909837914,
+        "support": 633.0
+      }
+    },
+    "per_class_specificity": {
+      "Cataract": 0.9161425576519916,
+      "Diabetic Retinopathy": 0.9572649572649573,
+      "Glaucoma": 0.8381742738589212,
+      "Normal": 0.8453389830508474
+    },
+    "model_name": "Decision Tree",
+    "model_type": "traditional",
+    "training_time_seconds": 0.5133178620001217,
+    "inference_time_ms_per_image": 0.003583850001120936,
+    "cv_f1_macro_mean": 0.6707009160212541,
+    "cv_f1_macro_std": 0.009973134933675253,
+    "n_parameters": null,
+    "model_size_kb": 43.79
+  },
+  "Random Forest": {
+    "accuracy": 0.8104265402843602,
+    "balanced_accuracy": 0.8071444332133939,
+    "precision_macro": 0.8133495317318846,
+    "recall_macro": 0.8071444332133939,
+    "specificity_macro": 0.9368567311586683,
+    "f1_macro": 0.8063487499001518,
+    "f1_weighted": 0.8087450821985969,
+    "roc_auc_macro": 0.9543632766537894,
+    "confusion_matrix": [
+      [
+        135,
+        0,
+        14,
+        7
+      ],
+      [
+        2,
+        152,
+        2,
+        9
+      ],
+      [
+        17,
+        1,
+        93,
+        40
+      ],
+      [
+        11,
+        7,
+        10,
+        133
+      ]
+    ],
+    "classification_report": {
+      "Cataract": {
+        "precision": 0.8181818181818182,
+        "recall": 0.8653846153846154,
+        "f1-score": 0.8411214953271028,
+        "support": 156.0
+      },
+      "Diabetic Retinopathy": {
+        "precision": 0.95,
+        "recall": 0.9212121212121213,
+        "f1-score": 0.9353846153846154,
+        "support": 165.0
+      },
+      "Glaucoma": {
+        "precision": 0.7815126050420168,
+        "recall": 0.6158940397350994,
+        "f1-score": 0.6888888888888889,
+        "support": 151.0
+      },
+      "Normal": {
+        "precision": 0.7037037037037037,
+        "recall": 0.8260869565217391,
+        "f1-score": 0.76,
+        "support": 161.0
+      },
+      "accuracy": 0.8104265402843602,
+      "macro avg": {
+        "precision": 0.8133495317318846,
+        "recall": 0.8071444332133939,
+        "f1-score": 0.8063487499001518,
+        "support": 633.0
+      },
+      "weighted avg": {
+        "precision": 0.8146778251090119,
+        "recall": 0.8104265402843602,
+        "f1-score": 0.8087450821985969,
+        "support": 633.0
+      }
+    },
+    "per_class_specificity": {
+      "Cataract": 0.9371069182389937,
+      "Diabetic Retinopathy": 0.9829059829059829,
+      "Glaucoma": 0.946058091286307,
+      "Normal": 0.8813559322033898
+    },
+    "model_name": "Random Forest",
+    "model_type": "traditional",
+    "training_time_seconds": 1.8031494589999966,
+    "inference_time_ms_per_image": 4.273213756250982,
+    "cv_f1_macro_mean": 0.7820584433430632,
+    "cv_f1_macro_std": 0.01928005197138889,
+    "n_parameters": null,
+    "model_size_kb": 21884.76
+  },
+  "SVM": {
+    "accuracy": 0.8736176935229067,
+    "balanced_accuracy": 0.8715744412512336,
+    "precision_macro": 0.8714648673414136,
+    "recall_macro": 0.8715744412512336,
+    "specificity_macro": 0.9581007896762577,
+    "f1_macro": 0.8714892806260637,
+    "f1_weighted": 0.8736171733323089,
+    "roc_auc_macro": 0.9765321387689517,
+    "confusion_matrix": [
+      [
+        139,
+        0,
+        13,
+        4
+      ],
+      [
+        1,
+        164,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        118,
+        23
+      ],
+      [
+        9,
+        0,
+        20,
+        132
+      ]
+    ],
+    "classification_report": {
+      "Cataract": {
+        "precision": 0.8742138364779874,
+        "recall": 0.8910256410256411,
+        "f1-score": 0.8825396825396825,
+        "support": 156.0
+      },
+      "Diabetic Retinopathy": {
+        "precision": 1.0,
+        "recall": 0.9939393939393939,
+        "f1-score": 0.9969604863221885,
+        "support": 165.0
+      },
+      "Glaucoma": {
+        "precision": 0.7814569536423841,
+        "recall": 0.7814569536423841,
+        "f1-score": 0.7814569536423841,
+        "support": 151.0
+      },
+      "Normal": {
+        "precision": 0.8301886792452831,
+        "recall": 0.8198757763975155,
+        "f1-score": 0.825,
+        "support": 161.0
+      },
+      "accuracy": 0.8736176935229067,
+      "macro avg": {
+        "precision": 0.8714648673414136,
+        "recall": 0.8715744412512336,
+        "f1-score": 0.8714892806260637,
+        "support": 633.0
+      },
+      "weighted avg": {
+        "precision": 0.8736773078184149,
+        "recall": 0.8736176935229067,
+        "f1-score": 0.8736171733323089,
+        "support": 633.0
+      }
+    },
+    "per_class_specificity": {
+      "Cataract": 0.9580712788259959,
+      "Diabetic Retinopathy": 1.0,
+      "Glaucoma": 0.9315352697095436,
+      "Normal": 0.9427966101694916
+    },
+    "model_name": "SVM",
+    "model_type": "traditional",
+    "training_time_seconds": 2.846173262999855,
+    "inference_time_ms_per_image": 0.20477070937445774,
+    "cv_f1_macro_mean": 0.8604425149147726,
+    "cv_f1_macro_std": 0.01173794580575933,
+    "n_parameters": null,
+    "model_size_kb": 2721.05
+  },
+  "KNN": {
+    "accuracy": 0.8262243285939969,
+    "balanced_accuracy": 0.8238930004154594,
+    "precision_macro": 0.8266311822902385,
+    "recall_macro": 0.8238930004154594,
+    "specificity_macro": 0.9422787233668768,
+    "f1_macro": 0.8240555135902821,
+    "f1_weighted": 0.8263604789353743,
+    "roc_auc_macro": 0.948613828724358,
+    "confusion_matrix": [
+      [
+        137,
+        0,
+        9,
+        10
+      ],
+      [
+        3,
+        155,
+        3,
+        4
+      ],
+      [
+        18,
+        0,
+        105,
+        28
+      ],
+      [
+        14,
+        1,
+        20,
+        126
+      ]
+    ],
+    "classification_report": {
+      "Cataract": {
+        "precision": 0.7965116279069767,
+        "recall": 0.8782051282051282,
+        "f1-score": 0.8353658536585366,
+        "support": 156.0
+      },
+      "Diabetic Retinopathy": {
+        "precision": 0.9935897435897436,
+        "recall": 0.9393939393939394,
+        "f1-score": 0.9657320872274143,
+        "support": 165.0
+      },
+      "Glaucoma": {
+        "precision": 0.7664233576642335,
+        "recall": 0.695364238410596,
+        "f1-score": 0.7291666666666666,
+        "support": 151.0
+      },
+      "Normal": {
+        "precision": 0.75,
+        "recall": 0.782608695652174,
+        "f1-score": 0.7659574468085106,
+        "support": 161.0
+      },
+      "accuracy": 0.8262243285939969,
+      "macro avg": {
+        "precision": 0.8266311822902385,
+        "recall": 0.8238930004154594,
+        "f1-score": 0.8240555135902821,
+        "support": 633.0
+      },
+      "weighted avg": {
+        "precision": 0.8288752743334838,
+        "recall": 0.8262243285939969,
+        "f1-score": 0.8263604789353743,
+        "support": 633.0
+      }
+    },
+    "per_class_specificity": {
+      "Cataract": 0.9266247379454927,
+      "Diabetic Retinopathy": 0.9978632478632479,
+      "Glaucoma": 0.9336099585062241,
+      "Normal": 0.9110169491525424
+    },
+    "model_name": "KNN",
+    "model_type": "traditional",
+    "training_time_seconds": 0.007894977999967523,
+    "inference_time_ms_per_image": 0.061964856249119286,
+    "cv_f1_macro_mean": 0.7791083382743486,
+    "cv_f1_macro_std": 0.005393130763917382,
+    "n_parameters": null,
+    "model_size_kb": 2127.61
+  },
+  "Logistic Regression": {
+    "accuracy": 0.8420221169036335,
+    "balanced_accuracy": 0.8395918543017593,
+    "precision_macro": 0.8423082405298944,
+    "recall_macro": 0.8395918543017593,
+    "specificity_macro": 0.9476974541946238,
+    "f1_macro": 0.8402641219895278,
+    "f1_weighted": 0.843074103663551,
+    "roc_auc_macro": 0.9607747961119812,
+    "confusion_matrix": [
+      [
+        123,
+        1,
+        28,
+        4
+      ],
+      [
+        0,
+        162,
+        3,
+        0
+      ],
+      [
+        15,
+        0,
+        116,
+        20
+      ],
+      [
+        8,
+        2,
+        19,
+        132
+      ]
+    ],
+    "classification_report": {
+      "Cataract": {
+        "precision": 0.8424657534246576,
+        "recall": 0.7884615384615384,
+        "f1-score": 0.8145695364238411,
+        "support": 156.0
+      },
+      "Diabetic Retinopathy": {
+        "precision": 0.9818181818181818,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.9818181818181818,
+        "support": 165.0
+      },
+      "Glaucoma": {
+        "precision": 0.6987951807228916,
+        "recall": 0.7682119205298014,
+        "f1-score": 0.7318611987381703,
+        "support": 151.0
+      },
+      "Normal": {
+        "precision": 0.8461538461538461,
+        "recall": 0.8198757763975155,
+        "f1-score": 0.832807570977918,
+        "support": 161.0
+      },
+      "accuracy": 0.8420221169036335,
+      "macro avg": {
+        "precision": 0.8423082405298944,
+        "recall": 0.8395918543017593,
+        "f1-score": 0.8402641219895278,
+        "support": 633.0
+      },
+      "weighted avg": {
+        "precision": 0.8454557646985347,
+        "recall": 0.8420221169036335,
+        "f1-score": 0.843074103663551,
+        "support": 633.0
+      }
+    },
+    "per_class_specificity": {
+      "Cataract": 0.9517819706498952,
+      "Diabetic Retinopathy": 0.9935897435897436,
+      "Glaucoma": 0.8962655601659751,
+      "Normal": 0.9491525423728814
+    },
+    "model_name": "Logistic Regression",
+    "model_type": "traditional",
+    "training_time_seconds": 1.3231015409999145,
+    "inference_time_ms_per_image": 0.0035175624979899567,
+    "cv_f1_macro_mean": 0.8151982443711419,
+    "cv_f1_macro_std": 0.007752908044527454,
+    "n_parameters": null,
+    "model_size_kb": 5.58
+  }
+}

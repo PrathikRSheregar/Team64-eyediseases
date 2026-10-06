@@ -1,0 +1,60 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-eye_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-eye_password}
+      POSTGRES_DB: ${POSTGRES_DB:-eye_disease_db}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-eye_user} -d ${POSTGRES_DB:-eye_disease_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-eye_user}:${POSTGRES_PASSWORD:-eye_password}@db:5432/${POSTGRES_DB:-eye_disease_db}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-CHANGE_ME_IN_ENV}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8080}
+      UPLOAD_DIR: uploads
+      MODELS_DIR: /app/models
+      ENVIRONMENT: ${ENVIRONMENT:-production}
+    volumes:
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+      - ./ml/artifacts:/app/ml/artifacts
+      - ./dataset:/app/dataset
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    working_dir: /app/backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: /api
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  pg_data:

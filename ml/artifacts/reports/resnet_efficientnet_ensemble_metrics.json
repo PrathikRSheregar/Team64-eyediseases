@@ -1,0 +1,31 @@
+{
+  "models": {
+    "ResNet": {
+      "accuracy": 0.8625592417061612,
+      "macro_f1": 0.8616606161705134,
+      "balanced_accuracy": 0.8612219973615021,
+      "macro_recall": 0.8612219973615021,
+      "macro_roc_auc": 0.9765940378548111,
+      "selection_score": 0.8787032509591028
+    },
+    "EfficientNet": {
+      "accuracy": 0.8436018957345972,
+      "macro_f1": 0.8431611665134126,
+      "balanced_accuracy": 0.8411909858065919,
+      "macro_recall": 0.8411909858065919,
+      "macro_roc_auc": 0.9713900009567453,
+      "selection_score": 0.8615089103618432
+    }
+  },
+  "ensemble": {
+    "ResNet_weight": 0.55,
+    "EfficientNet_weight": 0.44999999999999996,
+    "accuracy": 0.8799368088467614,
+    "macro_f1": 0.8789467075426961,
+    "balanced_accuracy": 0.8780748524917831,
+    "macro_recall": 0.8780748524917831,
+    "macro_roc_auc": 0.9797771094786619,
+    "selection_score": 0.8936789330601801
+  },
+  "selection_criterion": "0.40*macro_F1 + 0.25*balanced_accuracy + 0.20*macro_recall + 0.15*macro_ROC_AUC"
+}

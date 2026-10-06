@@ -1,0 +1,36 @@
+{
+  "total_images": 4215,
+  "images_per_class": {
+    "Cataract": 1038,
+    "Diabetic Retinopathy": 1098,
+    "Glaucoma": 1005,
+    "Normal": 1074
+  },
+  "class_percentages": {
+    "Cataract": 24.63,
+    "Diabetic Retinopathy": 26.05,
+    "Glaucoma": 23.84,
+    "Normal": 25.48
+  },
+  "train_images": 2950,
+  "val_images": 632,
+  "test_images": 633,
+  "train_per_class": {
+    "Cataract": 727,
+    "Diabetic Retinopathy": 768,
+    "Glaucoma": 703,
+    "Normal": 752
+  },
+  "val_per_class": {
+    "Cataract": 155,
+    "Diabetic Retinopathy": 165,
+    "Glaucoma": 151,
+    "Normal": 161
+  },
+  "test_per_class": {
+    "Cataract": 156,
+    "Diabetic Retinopathy": 165,
+    "Glaucoma": 151,
+    "Normal": 161
+  }
+}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.db
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+dist/
+frontend/dist/
+
+# Dataset
+dataset/
+
+# Uploaded user images
+uploads/*
+!uploads/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+# Old Git history backup
+.git_old/
+
+# Unused trained model files
+efficientnet_baseline_best.keras
+efficientnet_best.keras
+mobilenet_best.keras
+production_model_efficientnet_backup.keras
+resnet_baseline_best.keras
