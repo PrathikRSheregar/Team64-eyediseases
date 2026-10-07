@@ -1,5 +1,5 @@
 {
-  "production_model": "SVM",
-  "model_type": "traditional",
-  "artifact": "production_model.joblib"
+  "production_model": "Hybrid ResNet + Traditional Features + RBF SVM",
+  "model_type": "hybrid",
+  "artifact": "hybrid_resnet_traditional_svm.joblib"
 }

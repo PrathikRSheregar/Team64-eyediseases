@@ -1,0 +1,24 @@
+{
+  "model_name": "Hybrid ResNet + Traditional Features + RBF SVM",
+  "deep_feature_extractor": "resnet_best.keras",
+  "deep_feature_dimensions": 128,
+  "fused_feature_dimensions": 1993,
+  "pca_components": 256,
+  "pca_explained_variance": 0.8953601121902466,
+  "svm_kernel": "rbf",
+  "svm_C": 10,
+  "svm_gamma": "scale",
+  "class_weight": "balanced",
+  "test_metrics": {
+    "accuracy": 0.9210110584518167,
+    "balanced_accuracy": 0.919557030214243,
+    "f1_macro": 0.9196878827975838
+  },
+  "training_time_seconds": 10.745558491998963,
+  "classes": [
+    "Cataract",
+    "Diabetic Retinopathy",
+    "Glaucoma",
+    "Normal"
+  ]
+}
